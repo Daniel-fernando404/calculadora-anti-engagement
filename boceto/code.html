@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#004b1e",
+                      "surface-container-high": "#e2e7ff",
+                      "inverse-primary": "#4ae176",
+                      "background": "#faf8ff",
+                      "on-secondary-fixed-variant": "#930013",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#bccbb9",
+                      "tertiary-container": "#ff8b7c",
+                      "surface-bright": "#faf8ff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#410001",
+                      "on-error": "#ffffff",
+                      "primary-fixed-dim": "#4ae176",
+                      "on-surface-variant": "#3d4a3d",
+                      "on-background": "#131b2e",
+                      "secondary-container": "#da3437",
+                      "on-primary-fixed-variant": "#005321",
+                      "surface-tint": "#006e2f",
+                      "tertiary-fixed-dim": "#ffb4a9",
+                      "secondary-fixed-dim": "#ffb3ad",
+                      "primary": "#006e2f",
+                      "primary-fixed": "#6bff8f",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#76231b",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#002109",
+                      "surface-container": "#eaedff",
+                      "on-tertiary-fixed-variant": "#7f2a21",
+                      "primary-container": "#22c55e",
+                      "surface-container-highest": "#dae2fd",
+                      "tertiary-fixed": "#ffdad5",
+                      "on-surface": "#131b2e",
+                      "secondary": "#b61722",
+                      "tertiary": "#9e4036",
+                      "surface-dim": "#d2d9f4",
+                      "surface-variant": "#dae2fd",
+                      "secondary-fixed": "#ffdad7",
+                      "surface-container-low": "#f2f3ff",
+                      "surface": "#faf8ff",
+                      "inverse-surface": "#283044",
+                      "error-container": "#ffdad6",
+                      "on-secondary-container": "#fffbff",
+                      "outline": "#6d7b6c",
+                      "inverse-on-surface": "#eef0ff",
+                      "on-secondary-fixed": "#410004"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xs": "4px",
+                      "xl": "40px",
+                      "unit": "4px",
+                      "md": "16px",
+                      "sm": "8px",
+                      "lg": "24px",
+                      "container-margin": "16px",
+                      "gutter": "12px"
+              },
+              "fontFamily": {
+                      "display-price": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "label-mono": ["JetBrains Mono"]
+              },
+              "fontSize": {
+                      "display-price": ["48px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                      "label-mono": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf8ff;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<header class="bg-surface-container-lowest border-b border-outline-variant sticky top-0 z-50 transition-colors duration-150">
+<div class="max-w-6xl mx-auto px-container-margin h-20 flex justify-between items-center">
+<h1 class="font-headline-lg text-headline-lg font-black text-on-surface uppercase tracking-tight">Anti-Engaños</h1>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="flex items-center gap-xs px-md py-sm bg-primary-container text-on-primary-container rounded-lg font-label-mono text-label-mono transition-all hover:opacity-90" href="#">
+<span class="material-symbols-outlined text-[20px]">compare_arrows</span>
+                    Comparar
+                </a>
+<a class="flex items-center gap-xs px-md py-sm text-on-surface-variant hover:text-primary font-label-mono text-label-mono transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">history</span>
+                    Historial
+                </a>
+<a class="flex items-center gap-xs px-md py-sm text-on-surface-variant hover:text-primary font-label-mono text-label-mono transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+                    Tips
+                </a>
+</nav>
+<div class="flex gap-sm">
+<button class="hover:bg-surface-container-low transition-colors duration-150 active:opacity-80 p-sm rounded-lg">
+<span class="material-symbols-outlined text-on-surface-variant">settings</span>
+</button>
+</div>
+</div>
+</header>
+<main class="w-full max-w-6xl mx-auto px-container-margin py-xl flex-grow flex flex-col gap-xl items-center">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg w-full max-w-5xl">
+<section class="relative bg-surface-container-lowest border border-outline p-xl rounded-xl flex flex-col gap-md shadow-sm transition-all duration-300" id="card-a">
+<div class="hidden absolute -top-3 -right-3 bg-primary-container text-on-primary-container px-md py-xs rounded-full font-label-mono text-label-mono z-10 shadow-md" id="badge-a">GANADOR</div>
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface-variant mb-md border-b border-outline-variant pb-sm">Opción A</h2>
+<div class="relative group">
+<label class="absolute top-2 left-3 font-label-mono text-[10px] text-on-surface-variant uppercase tracking-wider">Precio ($)</label>
+<input class="w-full pt-6 pb-2 px-3 bg-surface-container-low border-none rounded-lg font-display-price text-display-price focus:ring-2 focus:ring-primary transition-all" id="price-a" placeholder="0.00" type="number"/>
+</div>
+<div class="relative group">
+<label class="absolute top-2 left-3 font-label-mono text-[10px] text-on-surface-variant uppercase tracking-wider">Cantidad (u, g, ml)</label>
+<input class="w-full pt-6 pb-2 px-3 bg-surface-container-low border-none rounded-lg font-display-price text-display-price focus:ring-2 focus:ring-primary transition-all" id="qty-a" placeholder="1000" type="number"/>
+</div>
+<div class="mt-lg pt-md">
+<p class="font-label-mono text-label-mono text-on-surface-variant uppercase">Precio Unitario</p>
+<p class="font-display-price text-display-price text-on-surface" id="unit-a">$0.00</p>
+</div>
+</section>
+<section class="relative bg-surface-container-lowest border border-outline p-xl rounded-xl flex flex-col gap-md shadow-sm transition-all duration-300" id="card-b">
+<div class="hidden absolute -top-3 -right-3 bg-primary-container text-on-primary-container px-md py-xs rounded-full font-label-mono text-label-mono z-10 shadow-md" id="badge-b">GANADOR</div>
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface-variant mb-md border-b border-outline-variant pb-sm">Opción B</h2>
+<div class="relative group">
+<label class="absolute top-2 left-3 font-label-mono text-[10px] text-on-surface-variant uppercase tracking-wider">Precio ($)</label>
+<input class="w-full pt-6 pb-2 px-3 bg-surface-container-low border-none rounded-lg font-display-price text-display-price focus:ring-2 focus:ring-primary transition-all" id="price-b" placeholder="0.00" type="number"/>
+</div>
+<div class="relative group">
+<label class="absolute top-2 left-3 font-label-mono text-[10px] text-on-surface-variant uppercase tracking-wider">Cantidad (u, g, ml)</label>
+<input class="w-full pt-6 pb-2 px-3 bg-surface-container-low border-none rounded-lg font-display-price text-display-price focus:ring-2 focus:ring-primary transition-all" id="qty-b" placeholder="1000" type="number"/>
+</div>
+<div class="mt-lg pt-md">
+<p class="font-label-mono text-label-mono text-on-surface-variant uppercase">Precio Unitario</p>
+<p class="font-display-price text-display-price text-on-surface" id="unit-b">$0.00</p>
+</div>
+</section>
+</div>
+<div class="w-full max-w-5xl p-lg rounded-xl bg-surface-container-highest border border-outline-variant flex items-center justify-center text-center transition-all duration-500 min-h-[120px] shadow-sm" id="result-banner">
+<p class="font-body-lg text-body-lg text-on-surface" id="result-text">Ingresa los datos para comparar el valor real de tus productos.</p>
+</div>
+</main>
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant py-xl">
+<div class="max-w-6xl mx-auto px-container-margin flex flex-col md:flex-row justify-between items-center gap-md font-label-mono text-label-mono text-on-surface-variant">
+<span class="font-bold">© 2024 Anti-Engaños</span>
+<div class="flex gap-lg">
+<a class="hover:text-primary transition-colors underline decoration-transparent hover:decoration-current" href="#">Política de Privacidad</a>
+<a class="hover:text-primary transition-colors underline decoration-transparent hover:decoration-current" href="#">Términos de Servicio</a>
+<a class="hover:text-primary transition-colors underline decoration-transparent hover:decoration-current" href="#">Contacto</a>
+</div>
+</div>
+</footer>
+<script>
+        const inputs = ['price-a', 'qty-a', 'price-b', 'qty-b'];
+        
+        function calculate() {
+            const pA = parseFloat(document.getElementById('price-a').value) || 0;
+            const qA = parseFloat(document.getElementById('qty-a').value) || 0;
+            const pB = parseFloat(document.getElementById('price-b').value) || 0;
+            const qB = parseFloat(document.getElementById('qty-b').value) || 0;
+
+            const uA = qA > 0 ? pA / qA : 0;
+            const uB = qB > 0 ? pB / qB : 0;
+
+            document.getElementById('unit-a').textContent = `$${uA.toFixed(4)}`;
+            document.getElementById('unit-b').textContent = `$${uB.toFixed(4)}`;
+
+            const cardA = document.getElementById('card-a');
+            const cardB = document.getElementById('card-b');
+            const badgeA = document.getElementById('badge-a');
+            const badgeB = document.getElementById('badge-b');
+            const banner = document.getElementById('result-banner');
+            const resultText = document.getElementById('result-text');
+
+            // Reset styles
+            cardA.classList.remove('border-primary-container', 'border-[4px]', 'shadow-lg');
+            cardB.classList.remove('border-primary-container', 'border-[4px]', 'shadow-lg');
+            badgeA.classList.add('hidden');
+            badgeB.classList.add('hidden');
+            banner.className = "w-full max-w-5xl p-lg rounded-xl bg-surface-container-highest border border-outline-variant flex items-center justify-center text-center transition-all duration-500 min-h-[120px] shadow-sm";
+            resultText.classList.remove('text-on-primary-container', 'font-bold');
+
+            if (uA > 0 && uB > 0) {
+                if (uA < uB) {
+                    highlightWinner('A', uA, uB);
+                } else if (uB < uA) {
+                    highlightWinner('B', uB, uA);
+                } else {
+                    resultText.textContent = "Ambas opciones tienen el mismo valor unitario.";
+                }
+            } else {
+                resultText.textContent = "Ingresa los datos para comparar el valor real de tus productos.";
+            }
+        }
+
+        function highlightWinner(winner, winnerVal, loserVal) {
+            const card = document.getElementById(`card-${winner.toLowerCase()}`);
+            const badge = document.getElementById(`badge-${winner.toLowerCase()}`);
+            const banner = document.getElementById('result-banner');
+            const resultText = document.getElementById('result-text');
+
+            card.classList.add('border-primary-container', 'border-[4px]', 'shadow-lg');
+            badge.classList.remove('hidden');
+
+            const diff = ((loserVal - winnerVal) / loserVal * 100).toFixed(1);
+            resultText.textContent = `¡La Opción ${winner} es un ${diff}% más económica por unidad!`;
+            
+            banner.className = "w-full max-w-5xl p-lg rounded-xl bg-primary-container border-primary border-2 flex items-center justify-center text-center transition-all duration-500 min-h-[120px] shadow-md";
+            resultText.classList.add('text-on-primary-container', 'font-bold', 'text-2xl');
+        }
+
+        inputs.forEach(id => {
+            document.getElementById(id).addEventListener('input', calculate);
+        });
+    </script>
+</body></html>
