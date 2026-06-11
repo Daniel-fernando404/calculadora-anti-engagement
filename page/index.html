@@ -24,30 +24,53 @@
     </header>
     <main>
         <!-- SECCIÓN PRINCIPAL DE LA PÁGINA -->
-        <section class="comparador">
+        <section class="comparadores">
 
             <article class="opcionA">
                 <h2>Opcion por Unidad</h2>
-                <div>
+                <div class="tarjeta-a">
                     <label for="precio-a">Precio ($)</label>
                     <input type="number" id="precio-a">
                     <label for="cantidad-a">Cantidad (U, G, ML)</label>
                     <input type="number" id="cantidad-a">
+                    <select id="selector-a">
+                        <option value="unidades">Unidades (U)</option>
+                        <option value="gramos">Gramos (G)</option>
+                        <option value="mililitros">Mililitros (ML)</option>
+                    </select>
+                    <div class="precio-unitario-a">
+                        <h3>
+                            Precio Unitario: $0.00
+                        </h3>
+                    </div>
                 </div>
     
             </article>
             <article class="opcionB">
                 <h2>Opcion por Packs</h2>
-                <div>
+                <div class="tarjeta-b">
                     <label for="precio-b">Precio ($)</label>
                     <input type="number" id="precio-b">
                     <label for="cantidad-b">Cantidad (U, G, ML)</label>
                     <input type="number" id="cantidad-b">
+                    <select id="selector-b">
+                        <option value="unidades">Unidades (U)</option>
+                        <option value="gramos">Gramos (G)</option>
+                        <option value="mililitros">Mililitros (ML)</option>
+                    </select>
+                    <div class="precio-unitario-b">
+                        <h3>
+                            Precio Unitario: $0.00
+                        </h3>
+                    </div>
                 </div>
             </article>
         </section>
         <!-- SECCIÓN DECORATIVA -->
         <div class="text-decorativo">
+            <p>
+                Compara precios de productos por unidad o por packs y descubre cuál es la mejor opción para tu bolsillo.
+            </p>
             
         </div>
     </main>
