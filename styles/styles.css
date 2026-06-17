@@ -12,14 +12,34 @@ body{
 
 .comparadores{
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+
+    max-width: 1000px;
+    margin: 2rem auto;
     padding: 1rem;
 }
 
+.input-container{
+    display:flex;
+    gap: 0.5rem;
+    flex: 1;
+
+}
+
+/*ESTILOS COMPARADOR A y B*/
+
 .tarjeta-a{
-    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+}
+
+.tarjeta-b{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 }
