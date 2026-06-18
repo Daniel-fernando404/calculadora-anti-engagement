@@ -8,6 +8,7 @@
 /*ESTILOS GENERALES*/
 body{
     font-family: 'Inter', sans-serif;
+    background-color: #FAFBFF;
 }
 
 /*ESTILOS HEADER*/
@@ -23,16 +24,16 @@ header{
 }
 .barra-nav{
     display:flex;
-    justify-content: space-between;
     align-items: center;
 
-    margin-top: 1rem;
 }
 
 ul{
     display:flex;
     gap: 1.5rem;
     list-style: none;
+
+    align-items: center;
 }
 
 a{
@@ -43,10 +44,27 @@ a{
 }
 
 .boton-comparar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+
+
+
     padding: 0.5rem 1rem;
-    background-color: #3b82f6;
+    background-color: #22C55E;
+    border: none;
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-weight: 500;
 }
 
+.enlace-historial{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 
 

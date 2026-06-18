@@ -1,92 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anti-Engaños</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css" />
     <!--FUENTE-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- CABEZERA DE LA PÁGINA -->
     <header>
-        <h1 class="titulo-principal">
-            ANTI-ENGAÑOS
-        </h1>
-        <!-- BARRA DE NAVEGACIÓN -->
-        <nav class="barra-nav">
-            <ul>
-                <li><button href="#" class="boton-comparar">Comparar</button></li>
-                <li><a href="#">Historial</a></li>
-                <li><a href="#">Ajustes</a></li>
-            </ul>
-    
-        </nav>
+      <h1 class="titulo-principal">ANTI-ENGAÑOS</h1>
+      <!-- BARRA DE NAVEGACIÓN -->
+      <nav class="barra-nav">
+        <ul>
+          <li>
+            <button href="#" class="boton-comparar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-switch-horizontal"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M16 3l4 4l-4 4" />
+                <path d="M10 7l10 0" />
+                <path d="M8 13l-4 4l4 4" />
+                <path d="M4 17l9 0" />
+              </svg>
+
+              Comparar
+            </button>
+          </li>
+          <li>
+            <a href="#" class="enlace-historial">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-history"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 8l0 4l2 2" />
+                <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+              </svg>
+              Historial</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-settings"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065"
+                />
+                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- SECCIÓN PRINCIPAL DE LA PÁGINA -->
-        <section class="comparadores">
-
-            <article class="opcionA">
-                <h2>Opcion por Unidad</h2>
-                <div class="tarjeta-a">
-                    <label for="precio-a">Precio ($)</label>
-                    <input type="number" id="precio-a">
-                    <label for="cantidad-a">Cantidad (U, G, ML)</label>
-                    <div class="input-container">
-                        <input type="number" id="cantidad-a">
-                        <select id="selector-a">
-                            <option value="unidades">Unidades (U)</option>
-                            <option value="gramos">Gramos (G)</option>
-                            <option value="mililitros">Mililitros (ML)</option>
-                        </select>
-                    </div>
-                    <div class="precio-unitario-a">
-                        <h3>
-                            Precio Unitario: $0.00
-                        </h3>
-                    </div>
-                </div>
-    
-            </article>
-            <article class="opcionB">
-                <h2>Opcion por Packs</h2>
-                <div class="tarjeta-b">
-                    <label for="precio-b">Precio ($)</label>
-                    <input type="number" id="precio-b">
-                    <label for="cantidad-b">Cantidad (U, G, ML)</label>
-                    <div class="input-container">
-                        <input type="number" id="cantidad-b">
-                        <select id="selector-b">
-                            <option value="unidades">Unidades (U)</option>
-                            <option value="gramos">Gramos (G)</option>
-                            <option value="mililitros">Mililitros (ML)</option>
-                        </select>
-                    </div>
-                    <div class="precio-unitario-b">
-                        <h3>
-                            Precio Unitario: $0.00
-                        </h3>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- SECCIÓN DECORATIVA -->
-        <div class="text-decorativo">
-            <p>
-                Compara precios de productos por unidad o por packs y descubre cuál es la mejor opción para tu bolsillo.
-            </p>
-            
-        </div>
+      <!-- SECCIÓN PRINCIPAL DE LA PÁGINA -->
+      <section class="comparadores">
+        <article class="opcionA">
+          <h2>Opcion por Unidad</h2>
+          <div class="tarjeta-a">
+            <label for="precio-a">Precio ($)</label>
+            <input type="number" id="precio-a" />
+            <label for="cantidad-a">Cantidad (U, G, ML)</label>
+            <div class="input-container">
+              <input type="number" id="cantidad-a" />
+              <select id="selector-a">
+                <option value="unidades">Unidades (U)</option>
+                <option value="gramos">Gramos (G)</option>
+                <option value="mililitros">Mililitros (ML)</option>
+              </select>
+            </div>
+            <div class="precio-unitario-a">
+              <h3>Precio Unitario: $0.00</h3>
+            </div>
+          </div>
+        </article>
+        <article class="opcionB">
+          <h2>Opcion por Packs</h2>
+          <div class="tarjeta-b">
+            <label for="precio-b">Precio ($)</label>
+            <input type="number" id="precio-b" />
+            <label for="cantidad-b">Cantidad (U, G, ML)</label>
+            <div class="input-container">
+              <input type="number" id="cantidad-b" />
+              <select id="selector-b">
+                <option value="unidades">Unidades (U)</option>
+                <option value="gramos">Gramos (G)</option>
+                <option value="mililitros">Mililitros (ML)</option>
+              </select>
+            </div>
+            <div class="precio-unitario-b">
+              <h3>Precio Unitario: $0.00</h3>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- SECCIÓN DECORATIVA -->
+      <div class="text-decorativo">
+        <p>
+          Compara precios de productos por unidad o por packs y descubre cuál es
+          la mejor opción para tu bolsillo.
+        </p>
+      </div>
     </main>
     <!-- PIE DE PÁGINA -->
     <footer>
-        <small>Copyright © 2024 Anti-Engaños. All rights reserved.</small>
+      <small>Copyright © 2024 Anti-Engaños. All rights reserved.</small>
     </footer>
-</body>
+  </body>
 </html>
