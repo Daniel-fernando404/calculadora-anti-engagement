@@ -8,7 +8,7 @@
 /*ESTILOS GENERALES*/
 body{
     font-family: 'Inter', sans-serif;
-    background-color: #FAFBFF;
+    background-color: #f8fafc;
 }
 
 /*ESTILOS HEADER*/
@@ -69,35 +69,7 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*ESTILOS COMPARADORES*/
 
 
 
@@ -127,6 +99,11 @@ a{
     gap: 1rem;
     padding: 1rem;
     flex:1;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .tarjeta-b{
@@ -135,9 +112,46 @@ a{
     gap: 1rem;
     padding: 1rem;
     flex:1;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.tarjeta-b h2, .tarjeta-a h2{
+    color: #1e293b;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
 }
 
 input, select{
     padding:0.5rem;
     width: 100%;
+
+    border: none;
+    background-color: #F1F5F9;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+
+
+}
+
+
+/*Estilo de texto*/
+.text-decorativo{
+    padding: 1.55rem;
+    text-align: center;
+    background-color: #bfd1fa;
+    color: black;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.text-decorativo p{
+    padding: 1rem;
+    font-weight: 600;
 }
